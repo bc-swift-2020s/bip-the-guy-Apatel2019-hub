@@ -15,21 +15,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="Qbg-zB-Tov">
-                                <rect key="frame" x="16" y="20" width="288" height="365"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="Qbg-zB-Tov">
+                                <rect key="frame" x="16" y="4" width="0.0" height="418"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Th5-Zo-jcS" appends="YES" id="Jg3-kT-W48"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Choose Image to Punch:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XA-0V-qBT">
-                                <rect key="frame" x="67" y="393" width="187" height="21"/>
+                                <rect key="frame" x="67" y="446" width="187" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qCo-Hc-Cuc">
-                                <rect key="frame" x="61" y="422" width="198" height="30"/>
+                                <rect key="frame" x="61" y="474.5" width="198" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBN-4B-mUz">
                                         <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
@@ -50,7 +50,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Qbg-zB-Tov" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="D9z-ay-GAa"/>
+                            <constraint firstItem="1XA-0V-qBT" firstAttribute="top" secondItem="Qbg-zB-Tov" secondAttribute="bottom" constant="8" id="NWb-1u-kfb"/>
                             <constraint firstItem="1XA-0V-qBT" firstAttribute="top" secondItem="Qbg-zB-Tov" secondAttribute="bottom" constant="8" id="UmV-rT-ojR"/>
+                            <constraint firstItem="Qbg-zB-Tov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Yyv-Xd-1Y1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qbg-zB-Tov" secondAttribute="trailing" constant="16" id="aYH-jI-2dI"/>
                             <constraint firstItem="qCo-Hc-Cuc" firstAttribute="top" secondItem="1XA-0V-qBT" secondAttribute="bottom" constant="8" id="vzM-gQ-gFq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
